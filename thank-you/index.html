@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order Confirmed | Santosha Nutrition</title>
+<meta name="description" content="Thank you for your order from Santosha Nutrition. Square has emailed your receipt.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Order Confirmed | Santosha Nutrition">
+<meta property="og:description" content="Thank you for your order from Santosha Nutrition. Square has emailed your receipt.">
+<meta property="og:image" content="https://trevorprovencio-bit.github.io/santosha-site/assets/img/liz-in-the-kitchen.jpg">
+<meta property="og:url" content="https://trevorprovencio-bit.github.io/santosha-site/thank-you/">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<style>
+body{margin:0;background:var(--surface)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<noscript><p style="padding:24px;font-family:sans-serif">This design preview needs JavaScript turned on.</p></noscript>
+<template id="tpl">
+<div style="background: var(--surface); color: var(--ink); font-family: var(--font-text); min-width: 0;">
+
+<x-import component-from-global-scope="Santosha.SiteHeader" home-href="../" logo-src="../assets/img/santosha-lockup.png" logo-alt="Santosha plant-based nutrition" links="{{navLinks}}" cta="{{headerCta}}"></x-import>
+
+<section id="thanks" aria-labelledby="thanks-title" style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px 72px;">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+<p class="eyebrow" style="margin: 0; color: var(--forest);">Order confirmed</p>
+<h1 id="thanks-title" class="display" style="margin: 0;">Yay plants! Thank you for your order.</h1>
+<p class="lead" style="margin: 0; max-width: 32em; color: var(--ink-muted);">Square has emailed your receipt. If you have a question about your order, send Liz a note and she’ll be happy to help.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; margin-top: 8px;">
+<x-import component-from-global-scope="Santosha.Button" href="../contact/">Contact Liz</x-import>
+<x-import component-from-global-scope="Santosha.TextLink" href="../">Back to the home page</x-import>
+</div>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; max-width: 520px;">
+<img src="../assets/img/liz-in-the-kitchen.jpg" alt="Liz at a marble kitchen counter with a board of fresh vegetables" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+</div>
+</section>
+
+<section id="newsletter" style="background: var(--surface-sunk);">
+<div style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px;">
+<div style="max-width: 880px;">
+<x-import component-from-global-scope="Santosha.NewsletterSignup" title="Cook along with Liz" description="Event pre-sales, news and plant-based tips, straight from Liz’s kitchen."></x-import>
+</div>
+</div>
+</section>
+
+<x-import component-from-global-scope="Santosha.SiteFooter" mark-src="../assets/img/santosha-mark-white.svg" tagline="Find your santosha…" location="Home Base — Vista, CA" columns="{{footerColumns}}" legal="© Santosha Nutrition. Plant-based nutrition education, not medical advice."></x-import>
+
+</div>
+</template>
+<script src="../assets/js/react.production.min.js"></script>
+<script src="../assets/js/react-dom.production.min.js"></script>
+<script src="../assets/js/santosha.js"></script>
+<script src="../assets/js/square-links.js"></script>
+<script src="../assets/js/dc-runtime.js"></script>
+<script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      yes: true,
+      navLinks: [
+        { label: 'Cooking classes', href: '../cooking-classes/' },
+        { label: 'Catering', href: '../catering/' },
+        { label: 'Events', href: '../events/' },
+        { label: 'Cookbook', href: '../cookbook/' },
+        { label: 'About Liz', href: '../about/' },
+        { label: 'Contact', href: '../contact/' }
+      ],
+      headerCta: { label: 'Book a class', shortLabel: 'Book', href: '../cooking-classes/' },
+      footerColumns: [
+        { title: 'Work with Liz', links: [{ label: 'Cooking classes', href: '../cooking-classes/' }, { label: 'Catering & events', href: '../catering/' }, { label: 'Farm-to-table experiences', href: '../catering/#farm-to-table' }, { label: 'Menu consulting', href: '../catering/#consulting' }] },
+        { title: 'Shop', links: [{ label: 'Kitchen Contentment cookbook', href: '../cookbook/' }, { label: 'Class gift certificates', href: '../cookbook/#gift' }] },
+        { title: 'Connect', links: [{ label: 'Contact Chef Liz', href: '../contact/' }, { label: 'Newsletter sign up', href: '#newsletter' }, { label: 'Media & podcasts', href: '../about/#media' }, { label: 'Instagram', href: 'https://www.instagram.com/santoshanutrition' }] },
+        { title: 'Good to know', links: [{ label: 'FAQ', href: '../contact/#faq' }, { label: 'Testimonials', href: '../about/#testimonials' }, { label: 'Medical disclaimer', href: '../contact/#disclaimer' }] }
+      ]
+    };
+  }
+}
+mountDC(Component);
+</script>
+</body>
+</html>

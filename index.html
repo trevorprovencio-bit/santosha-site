@@ -148,7 +148,7 @@ body{margin:0;background:var(--surface)}
 <p class="body" style="margin: 0; max-width: var(--text-max);">Chef Liz’s plant-based recipes, tips and techniques for cooking with the seasons and supporting local farmers.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
 <p class="price" style="margin: 0;">$40.00</p>
-<x-import component-from-global-scope="Santosha.Button" variant="on-band" size="lg" href="cookbook/">Order the cookbook</x-import>
+<x-import component-from-global-scope="Santosha.Button" variant="on-band" size="lg" href="{{square.cookbook}}">Buy the cookbook</x-import>
 <x-import component-from-global-scope="Santosha.TextLink" tone="on-band" href="cookbook/#gift">Or give a class as a gift</x-import>
 </div>
 <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 8px;">
@@ -217,12 +217,14 @@ body{margin:0;background:var(--surface)}
 <script src="assets/js/react.production.min.js"></script>
 <script src="assets/js/react-dom.production.min.js"></script>
 <script src="assets/js/santosha.js"></script>
+<script src="assets/js/square-links.js"></script>
 <script src="assets/js/dc-runtime.js"></script>
 <script>
 class Component extends DCLogic {
   renderVals() {
     const pressPaused = !!(this.state && this.state.pressPaused);
     return {
+      square: santoshaSquare(''),
       yes: true,
       pressCopies: [{ hidden: false }, { hidden: true }, { hidden: true }, { hidden: true }],
       pressMarqueeClass: pressPaused ? 'sn-marquee is-paused' : 'sn-marquee',

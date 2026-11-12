@@ -44,16 +44,10 @@ body{margin:0;background:var(--surface)}
 </div>
 <p class="price" style="margin: 0; font-size: 28px; line-height: 32px;">$40.00</p>
 <p class="body" style="margin: 0; max-width: var(--text-max);">Over 50 plant-based, seasonal recipes, tips and techniques from Chef Liz. She wrote it to support local farmers and to help you cook with what’s in season, for a healthy body and a healthy food system.</p>
-<div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px;">
-<div style="display: flex; flex-direction: column; gap: 8px;">
-<span id="qty-label" class="label">Quantity</span>
-<div role="group" aria-labelledby="qty-label" style="display: inline-flex; align-items: center; border: 1px solid var(--line-strong); border-radius: var(--radius-pill); background: var(--surface-raised);">
-<button type="button" aria-label="One fewer" onClick="{{lessBooks}}" style="width: 48px; height: 48px; border: 0; background: transparent; color: var(--ink); font: inherit; font-size: 22px; cursor: pointer; border-radius: var(--radius-pill);">−</button>
-<output class="label" aria-live="polite" style="min-width: 32px; text-align: center;">{{qty}}</output>
-<button type="button" aria-label="One more" onClick="{{moreBooks}}" style="width: 48px; height: 48px; border: 0; background: transparent; color: var(--ink); font: inherit; font-size: 22px; cursor: pointer; border-radius: var(--radius-pill);">+</button>
-</div>
-</div>
-<x-import component-from-global-scope="Santosha.Button" href="../cookbook/">Add to cart</x-import>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
+<x-import component-from-global-scope="Santosha.Button" size="lg" href="{{square.cookbook}}">Buy the cookbook</x-import>
+<p class="caption" style="margin: 0; color: var(--ink-muted);">{{square.note}}</p>
+<x-import component-from-global-scope="Santosha.TextLink" href="../contact/">Ordering several copies? Ask Liz</x-import>
 </div>
 <ul style="list-style: none; margin: 8px 0 0; padding: 0; border-top: 1px solid var(--line);">
 <li style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding: 12px 0; border-bottom: 1px solid var(--line);"><span class="label">Recipes</span><span class="body-sm" style="color: var(--ink-muted);">Over 50, plant-based and seasonal</span></li>
@@ -97,9 +91,12 @@ body{margin:0;background:var(--surface)}
 </div>
 <div><x-import component-from-global-scope="Santosha.TextLink" href="../cooking-classes/">See how classes work</x-import></div>
 </div>
-<div class="sn-card-row" style="flex: 2 1 620px; min-width: 0; --sn-card-min: 280px;">
-<x-import component-from-global-scope="Santosha.ServiceCard" title="Gift certificate for 1" price="$125.00" note="One guest" image="../assets/img/cooking-demo-yellow-kitchen.jpg" image-alt="Liz and a co-host cooking in a bright yellow kitchen" href="#gift" cta-label="Buy gift certificate">A plant-based cooking class with Chef Liz.</x-import>
-<x-import component-from-global-scope="Santosha.ServiceCard" title="Gift certificate for 2" price="$200.00" note="Two guests" image="../assets/img/hands-on-class.jpg" image-alt="A guest chopping vegetables beside Liz during a cooking class" href="#gift" cta-label="Buy gift certificate">A plant-based cooking class with Chef Liz, for two.</x-import>
+<div style="flex: 2 1 620px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<div class="sn-card-row" style="--sn-card-min: 280px;">
+<x-import component-from-global-scope="Santosha.ServiceCard" title="Gift certificate for 1" price="$125.00" note="One guest" image="../assets/img/cooking-demo-yellow-kitchen.jpg" image-alt="Liz and a co-host cooking in a bright yellow kitchen" href="{{square.gift1}}" cta-label="Buy gift certificate">A plant-based cooking class with Chef Liz.</x-import>
+<x-import component-from-global-scope="Santosha.ServiceCard" title="Gift certificate for 2" price="$200.00" note="Two guests" image="../assets/img/hands-on-class.jpg" image-alt="A guest chopping vegetables beside Liz during a cooking class" href="{{square.gift2}}" cta-label="Buy gift certificate">A plant-based cooking class with Chef Liz, for two.</x-import>
+</div>
+<p class="caption" style="margin: 0; color: var(--ink-muted);">{{square.note}}</p>
 </div>
 </section>
 
@@ -122,6 +119,7 @@ body{margin:0;background:var(--surface)}
 <script src="../assets/js/react.production.min.js"></script>
 <script src="../assets/js/react-dom.production.min.js"></script>
 <script src="../assets/js/santosha.js"></script>
+<script src="../assets/js/square-links.js"></script>
 <script src="../assets/js/dc-runtime.js"></script>
 <script>
 class Component extends DCLogic {
@@ -137,9 +135,7 @@ class Component extends DCLogic {
         { label: 'Contact', href: '../contact/' }
       ],
       headerCta: { label: 'Book a class', shortLabel: 'Book', href: '../cooking-classes/' },
-      qty: (this.state && this.state.qty) || 1,
-      lessBooks: () => this.setState({ qty: Math.max(1, ((this.state && this.state.qty) || 1) - 1) }),
-      moreBooks: () => this.setState({ qty: ((this.state && this.state.qty) || 1) + 1 }),
+      square: santoshaSquare('../'),
       footerColumns: [
         { title: 'Work with Liz', links: [{ label: 'Cooking classes', href: '../cooking-classes/' }, { label: 'Catering & events', href: '../catering/' }, { label: 'Farm-to-table experiences', href: '../catering/#farm-to-table' }, { label: 'Menu consulting', href: '../catering/#consulting' }] },
         { title: 'Shop', links: [{ label: 'Kitchen Contentment cookbook', href: '../cookbook/' }, { label: 'Class gift certificates', href: '../cookbook/#gift' }] },
