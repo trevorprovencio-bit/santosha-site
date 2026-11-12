@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vegan Catering & Events, North County San Diego | Santosha</title>
+<meta name="description" content="Plant-based catering for 10 to 1,000 guests: plated dinners, buffets and food vending, plus farm-to-table experiences and restaurant menu consulting.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vegan Catering & Events, North County San Diego | Santosha">
+<meta property="og:description" content="Plant-based catering for 10 to 1,000 guests: plated dinners, buffets and food vending, plus farm-to-table experiences and restaurant menu consulting.">
+<meta property="og:image" content="https://trevorprovencio-bit.github.io/santosha-site/assets/img/tasting-bite.jpg">
+<meta property="og:url" content="https://trevorprovencio-bit.github.io/santosha-site/catering/">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<style>
+body{margin:0;background:var(--surface)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<noscript><p style="padding:24px;font-family:sans-serif">This design preview needs JavaScript turned on.</p></noscript>
+<template id="tpl">
+<div style="background: var(--surface); color: var(--ink); font-family: var(--font-text); min-width: 0;">
+
+<x-import component-from-global-scope="Santosha.SiteHeader" home-href="../" logo-src="../assets/img/santosha-lockup.png" logo-alt="Santosha plant-based nutrition" links="{{navLinks}}" cta="{{headerCta}}"></x-import>
+
+<section class="sn-onband" aria-labelledby="hero-title" style="background: var(--band-forest); color: var(--on-band);">
+<div style="max-width: var(--layout-max); margin: 0 auto; padding: 72px 24px 0; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 40px 64px;">
+<div style="flex: 1 1 520px; min-width: 0; align-self: center; display: flex; flex-direction: column; gap: 24px; padding-bottom: 24px;">
+<p class="eyebrow" style="margin: 0;"><span style="border-bottom: 3px solid var(--citrus); padding-bottom: 4px;">Catering &amp; events</span></p>
+<h1 id="hero-title" class="display" style="margin: 0;">Plant-based food for <em>10 to 1,000</em> guests.</h1>
+<p class="lead" style="margin: 0; max-width: 32em;">Plated dinners, buffets and food vending for retreats, festivals and private parties. Every dish is vegan, and every menu is made to fit your event.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 8px;">
+<x-import component-from-global-scope="Santosha.Button" variant="on-band" size="lg" href="#inquire">Plan your event</x-import>
+<x-import component-from-global-scope="Santosha.TextLink" tone="on-band" href="#farm-to-table">See farm-to-table dinners</x-import>
+</div>
+</div>
+<div style="flex: 1 1 460px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: -96px;">
+<img src="../assets/img/tasting-bite.jpg" alt="Liz offering a plated bite at a pop-up, the Santosha banner behind her" style="grid-column: 1 / -1; display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 35%;">
+<img src="../assets/img/hummus-bowl.jpg" alt="Hummus with paprika and herbs, falafel behind" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover;">
+<img src="../assets/img/pesto-with-almonds.jpg" alt="Pesto with whole almonds, basil and lemon" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover;">
+</div>
+</div>
+</section>
+<div aria-hidden="true" style="height: 96px; background: var(--surface);"></div>
+
+<section id="catering" aria-labelledby="styles-title" style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 48px;">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<p class="eyebrow" style="margin: 0; color: var(--forest);">Service styles</p>
+<h2 id="styles-title" class="display" style="margin: 0;">Three ways to feed your guests.</h2>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px;">
+<x-import component-from-global-scope="Santosha.Tag" tone="forest">Vegan</x-import>
+<x-import component-from-global-scope="Santosha.Tag" tone="forest">Allergen-free</x-import>
+<span class="price" style="color: var(--ink);">10–1,000 guests</span>
+<span class="caption" style="color: var(--ink-muted);">Inquire for pricing</span>
+</div>
+</div>
+<div class="sn-card-row" style="--sn-card-min: 280px;">
+<article style="min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<img src="../assets/img/greens-on-wood.jpg" alt="A bowl of fresh greens on a red wood table with flowering branches" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+<h3 class="heading-1" style="margin: 0;">Plated</h3>
+<p class="body" style="margin: 0; color: var(--ink-muted);">Courses served at the table, for dinners and celebrations.</p>
+</article>
+<article style="min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<img src="../assets/img/falafel-grain-bowl.jpg" alt="Falafel over a herbed grain salad with tzatziki and hummus" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+<h3 class="heading-1" style="margin: 0;">Buffet</h3>
+<p class="body" style="margin: 0; color: var(--ink-muted);">A generous spread your guests serve themselves, for retreats and workshops.</p>
+</article>
+<article style="min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<img src="../assets/img/tasting-spoons.jpg" alt="Appetizer spoons topped with tomato and pesto" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+<h3 class="heading-1" style="margin: 0;">Food vending</h3>
+<p class="body" style="margin: 0; color: var(--ink-muted);">A Santosha food stand at your festival, market or fair.</p>
+</article>
+</div>
+</section>
+
+<section aria-labelledby="clients-title" style="background: var(--surface-sunk);">
+<div style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px;">
+<p class="eyebrow" style="margin: 0; color: var(--forest);">Happy clients</p>
+<h2 id="clients-title" class="display" style="margin: 0;">Retreats, festivals and a mountaintop.</h2>
+</div>
+<div class="sn-card-row" style="--sn-card-min: 300px;">
+<x-import component-from-global-scope="Santosha.Testimonial" name="Devra G." org="Weekend retreat host">Liz Murphy is a master at her craft. She was the primary chef at my weekend retreat and offered the most delicious, nutritious vegan cuisine anyone could ask for. Even the meat eaters were happy! She is extremely responsive, easy to work with and even helped out my other less experienced chef with menu idea and food purchasing.</x-import>
+<x-import component-from-global-scope="Santosha.Testimonial" name="Ivette C.">Liz, made a variety of delicious vegetarian food for an event I attended. She especially made a “tuna” salad that I begged to have the recipe. Her cooking was so delicious, that I’m hiring her privately to teach me how to cook!</x-import>
+<x-import component-from-global-scope="Santosha.Testimonial" name="Elura M.">Liz made amazing vegan organic food for an event I attended on Palomar Mountain, and it was incredible! We were blessed with her Earth Fairy Vibe and all the love she put in each meal.</x-import>
+</div>
+</div>
+</section>
+
+<section id="farm-to-table" aria-labelledby="farm-title" style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px 72px;">
+<div style="flex: 1 1 480px; min-width: 0; max-width: 600px;">
+<img src="../assets/img/liz-on-the-farm.jpg" alt="Liz picking vegetables in the farm rows with a basket" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+</div>
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px;">
+<p class="eyebrow" style="margin: 0; color: var(--forest);">Farm-to-table experiences</p>
+<h2 id="farm-title" class="display" style="margin: 0;">From the market to your table.</h2>
+<p class="body" style="margin: 0; max-width: var(--text-max); color: var(--ink-muted);">Curate your own experience with Liz, for your group, your family or your visitors from out of town.</p>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line);">
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line);">
+<span class="heading-2" aria-hidden="true" style="flex: none; width: 44px; height: 44px; border-radius: var(--radius-pill); background: var(--forest-soft); color: var(--forest); display: inline-flex; align-items: center; justify-content: center;">1</span>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 4px;"><span class="heading-3">Tour the farmers market</span><span class="body" style="color: var(--ink-muted);">Meet the growers and pick what’s in season.</span></div>
+</li>
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line);">
+<span class="heading-2" aria-hidden="true" style="flex: none; width: 44px; height: 44px; border-radius: var(--radius-pill); background: var(--forest-soft); color: var(--forest); display: inline-flex; align-items: center; justify-content: center;">2</span>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 4px;"><span class="heading-3">Cook together</span><span class="body" style="color: var(--ink-muted);">An interactive cooking demo with what you found.</span></div>
+</li>
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line);">
+<span class="heading-2" aria-hidden="true" style="flex: none; width: 44px; height: 44px; border-radius: var(--radius-pill); background: var(--forest-soft); color: var(--forest); display: inline-flex; align-items: center; justify-content: center;">3</span>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 4px;"><span class="heading-3">Sit down to dinner</span><span class="body" style="color: var(--ink-muted);">A private, plant-based dinner for your group.</span></div>
+</li>
+</ol>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
+<x-import component-from-global-scope="Santosha.Button" href="#inquire">Plan your experience</x-import>
+<span class="caption" style="color: var(--ink-muted);">Inquire for pricing</span>
+</div>
+</div>
+</section>
+
+<section id="consulting" aria-labelledby="consulting-title" style="border-top: 1px solid var(--line);">
+<div style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px 72px;">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px;">
+<p class="eyebrow" style="margin: 0; color: var(--forest);">Restaurant menu consulting</p>
+<h2 id="consulting-title" class="display" style="margin: 0;">New plant-based dishes for your menu.</h2>
+<p class="body" style="margin: 0; max-width: var(--text-max); color: var(--ink-muted);">Looking for plant-based, gluten-free options? Liz helps restaurants, pop-ups and events create healthier, appealing vegan and allergen-free dishes.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
+<x-import component-from-global-scope="Santosha.Button" variant="secondary" href="#inquire">Book a discovery session</x-import>
+<span class="caption" style="color: var(--ink-muted);">Inquire for pricing</span>
+</div>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; max-width: 480px;">
+<img src="../assets/img/tacos-with-succulent.jpg" alt="Tacos with red cabbage slaw on a woven mat beside an orange planter" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+</div>
+</div>
+</section>
+
+<section id="inquire" class="sn-onband" aria-labelledby="inquire-title" style="background: var(--band-forest); color: var(--on-band);">
+<div style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 32px 72px;">
+<div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<p class="eyebrow" style="margin: 0;">Plan your event</p>
+<h2 id="inquire-title" class="display" style="margin: 0;">Tell Liz about your event.</h2>
+<p class="body" style="margin: 0; max-width: var(--text-max);">Share the date, the number of guests and the kind of service you have in mind. Liz will get back to you with ideas and pricing.</p>
+</div>
+<div style="flex: 0 1 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
+<x-import component-from-global-scope="Santosha.Button" variant="on-band" size="lg" href="../contact/">Plan your event</x-import>
+<x-import component-from-global-scope="Santosha.TextLink" tone="on-band" href="../contact/#faq">Read the FAQ</x-import>
+</div>
+</div>
+</section>
+
+<x-import component-from-global-scope="Santosha.SiteFooter" mark-src="../assets/img/santosha-mark-white.svg" tagline="Find your santosha…" location="Home Base — Vista, CA" columns="{{footerColumns}}" legal="© Santosha Nutrition. Plant-based nutrition education, not medical advice."></x-import>
+
+</div>
+</template>
+<script src="../assets/js/react.production.min.js"></script>
+<script src="../assets/js/react-dom.production.min.js"></script>
+<script src="../assets/js/santosha.js"></script>
+<script src="../assets/js/dc-runtime.js"></script>
+<script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      yes: true,
+      navLinks: [
+        { label: 'Cooking classes', href: '../cooking-classes/' },
+        { label: 'Catering', href: '../catering/', current: true },
+        { label: 'Events', href: '../events/' },
+        { label: 'Cookbook', href: '../cookbook/' },
+        { label: 'About Liz', href: '../about/' },
+        { label: 'Contact', href: '../contact/' }
+      ],
+      headerCta: { label: 'Book a class', shortLabel: 'Book', href: '../cooking-classes/' },
+      footerColumns: [
+        { title: 'Work with Liz', links: [{ label: 'Cooking classes', href: '../cooking-classes/' }, { label: 'Catering & events', href: '../catering/' }, { label: 'Farm-to-table experiences', href: '../catering/#farm-to-table' }, { label: 'Menu consulting', href: '../catering/#consulting' }] },
+        { title: 'Shop', links: [{ label: 'Kitchen Contentment cookbook', href: '../cookbook/' }, { label: 'Class gift certificates', href: '../cookbook/#gift' }] },
+        { title: 'Connect', links: [{ label: 'Contact Chef Liz', href: '../contact/' }, { label: 'Newsletter sign up', href: '../index.html#newsletter' }, { label: 'Media & podcasts', href: '../about/#media' }, { label: 'Instagram', href: 'https://www.instagram.com/santoshanutrition' }] },
+        { title: 'Good to know', links: [{ label: 'FAQ', href: '../contact/#faq' }, { label: 'Testimonials', href: '../about/#testimonials' }, { label: 'Medical disclaimer', href: '../contact/#disclaimer' }] }
+      ]
+    };
+  }
+}
+mountDC(Component);
+</script>
+</body>
+</html>

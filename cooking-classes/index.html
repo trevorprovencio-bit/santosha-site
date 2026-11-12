@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant-Based Cooking Classes in San Diego | Santosha</title>
+<meta name="description" content="In-person, virtual and interactive dinner cooking classes with Chef Liz Murphy. Learn plant-based recipes in your kitchen or on camera, from $100/guest.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Plant-Based Cooking Classes in San Diego | Santosha">
+<meta property="og:description" content="In-person, virtual and interactive dinner cooking classes with Chef Liz Murphy. Learn plant-based recipes in your kitchen or on camera, from $100/guest.">
+<meta property="og:image" content="https://trevorprovencio-bit.github.io/santosha-site/assets/img/hands-on-class.jpg">
+<meta property="og:url" content="https://trevorprovencio-bit.github.io/santosha-site/cooking-classes/">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<style>
+body{margin:0;background:var(--surface)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<noscript><p style="padding:24px;font-family:sans-serif">This design preview needs JavaScript turned on.</p></noscript>
+<template id="tpl">
+<div style="background: var(--surface); color: var(--ink); font-family: var(--font-text); min-width: 0;">
+
+<x-import component-from-global-scope="Santosha.SiteHeader" home-href="../" logo-src="../assets/img/santosha-lockup.png" logo-alt="Santosha plant-based nutrition" links="{{navLinks}}" cta="{{headerCta}}"></x-import>
+
+<section class="sn-onband" aria-labelledby="hero-title" style="background: var(--band-forest); color: var(--on-band);">
+<div style="max-width: var(--layout-max); margin: 0 auto; padding: 72px 24px 0; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 40px 64px;">
+<div style="flex: 1 1 520px; min-width: 0; align-self: center; display: flex; flex-direction: column; gap: 24px; padding-bottom: 24px;">
+<p class="eyebrow" style="margin: 0;"><span style="border-bottom: 3px solid var(--citrus); padding-bottom: 4px;">Cooking classes</span></p>
+<h1 id="hero-title" class="display" style="margin: 0;">Let’s cook <em>together</em>.</h1>
+<p class="lead" style="margin: 0; max-width: 32em;">Chef Liz brings the class to you, in your kitchen or on camera. You’ll learn new plant-based foods and flavors to use in your own life.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 8px;">
+<x-import component-from-global-scope="Santosha.Button" variant="on-band" size="lg" href="#book">Book a class</x-import>
+<x-import component-from-global-scope="Santosha.TextLink" tone="on-band" href="#gift">Give a class as a gift</x-import>
+</div>
+</div>
+<div style="flex: 1 1 460px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: -96px;">
+<img src="../assets/img/hands-on-class.jpg" alt="A guest chopping vegetables beside Liz during an in-home cooking class" style="grid-column: 1 / -1; display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 25%;">
+<img src="../assets/img/pasta-with-lemons.jpg" alt="Pasta with crispy chickpeas, herbs and lemons" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover;">
+<img src="../assets/img/arugula-peach-salad.jpg" alt="Arugula, peach and pomegranate salad in a yellow bowl" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover;">
+</div>
+</div>
+</section>
+<div aria-hidden="true" style="height: 96px; background: var(--surface);"></div>
+
+<section id="formats" aria-labelledby="formats-title" style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 48px;">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<p class="eyebrow" style="margin: 0; color: var(--forest);">Three ways to cook with Liz</p>
+<h2 id="formats-title" class="display" style="margin: 0;">Pick the class that fits your group.</h2>
+</div>
+<p class="body" style="flex: 1 1 380px; min-width: 0; margin: 0; max-width: 520px; color: var(--ink-muted);">Every class is plant-based and taught by Chef Liz. In person, she brings the ingredients and equipment; on camera, she sends the recipes and a grocery list.</p>
+</div>
+<div class="sn-card-row" style="--sn-card-min: 300px;">
+<x-import component-from-global-scope="Santosha.ServiceCard" title="In-person class" price="$100/guest" note="($125 minimum)" tags="{{inPersonTags}}" image="../assets/img/class-prep-table.jpg" image-alt="Rainbow carrots, greens and wooden spoons on a class prep table" href="#book" cta-label="Book a class">Liz brings the class to your kitchen with everything you need. You’ll cook three dishes together and keep the digital recipes.</x-import>
+<x-import component-from-global-scope="Santosha.ServiceCard" title="Virtual class" price="$150/class" note="Up to 10 friends" tags="{{virtualTags}}" image="../assets/img/cooking-demo-yellow-kitchen.jpg" image-alt="Liz and a co-host cooking on camera in a bright yellow kitchen" href="#book" cta-label="Book a class">Let’s cook together on camera. You choose the cuisine, and Liz sends the recipes and ingredient list ahead of time.</x-import>
+<x-import component-from-global-scope="Santosha.ServiceCard" title="Interactive dinner" price="$110/guest" note="5–15 guests" tags="{{inPersonTags}}" image="../assets/img/wine-pour.jpg" image-alt="Rosé poured beside a plated dish in warm evening light" href="#book" cta-label="Book a class">Liz cooks a three-course plant-based dinner for your group. Guests can join in or watch and learn, and wine pairings are available.</x-import>
+</div>
+</section>
+
+<section id="sample" aria-labelledby="sample-title" style="background: var(--surface-sunk);">
+<div style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px 72px;">
+<div style="flex: 1 1 420px; min-width: 0; max-width: 560px;">
+<img src="../assets/img/dessert-on-slate.jpg" alt="A dessert with crumble falling onto a dark slate plate" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+</div>
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px;">
+<p class="eyebrow" style="margin: 0; color: var(--forest);">A sample class</p>
+<h2 id="sample-title" class="display" style="margin: 0;">Valentine’s Day, cooked together on camera.</h2>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line);">
+<li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid var(--line);"><span class="eyebrow" style="width: 96px; color: var(--aubergine);">Soup</span><span class="heading-2" style="flex: 1 1 260px; min-width: 0;">Smoky Squash &amp; Pear Bisque</span></li>
+<li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid var(--line);"><span class="eyebrow" style="width: 96px; color: var(--aubergine);">Main</span><span class="heading-2" style="flex: 1 1 260px; min-width: 0;">Mushroom Bourguignon with Herb Mash</span></li>
+<li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid var(--line);"><span class="eyebrow" style="width: 96px; color: var(--aubergine);">Dessert</span><span class="heading-2" style="flex: 1 1 260px; min-width: 0;">Mini Raspberry Cheesecakes</span></li>
+</ol>
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<p class="label" style="margin: 0;">Every guest got</p>
+<p class="body" style="margin: 0; color: var(--ink-muted);">A grocery list, a digital recipe packet and two hours of live, interactive cooking.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="reviews-title" style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px;">
+<p class="eyebrow" style="margin: 0; color: var(--forest);">From the class</p>
+<h2 id="reviews-title" class="display" style="margin: 0;">Fun for every skill level.</h2>
+</div>
+<div class="sn-card-row" style="--sn-card-min: 340px;">
+<x-import component-from-global-scope="Santosha.Testimonial" name="Cassie C." org="Mediterranean lunch for 7">Liz was wonderful to work with for the Mediterranean lunch we did for 7 people. She is very clean, thorough, and explains cooking methods, nutrition, and where you can buy certain foods. It was a fun time, healthy, and educational lunch!</x-import>
+<x-import component-from-global-scope="Santosha.Testimonial" name="Kirsten V." org="Galley Solutions">Santosha Nutrition’s virtual zero waste cooking class was the exact team building activity that I was looking for when I contacted Liz—fun, educational, and accessible to people with all skill levels in the kitchen.</x-import>
+</div>
+</section>
+
+<section id="gift" class="sn-onband" aria-labelledby="gift-title" style="background: var(--band-aubergine); color: var(--on-band);">
+<div style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 40px 72px;">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<p class="eyebrow" style="margin: 0;">Gift certificates</p>
+<h2 id="gift-title" class="display" style="margin: 0;">Give someone a class.</h2>
+<p class="body" style="margin: 0; max-width: var(--text-max);">A plant-based cooking class with Chef Liz, for one guest or for two.</p>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+<ul style="list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(255,255,255,.35);">
+<li style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.35);"><span class="label">Gift certificate for 1</span><span class="price">$125.00</span></li>
+<li style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.35);"><span class="label">Gift certificate for 2</span><span class="price">$200.00</span></li>
+</ul>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
+<x-import component-from-global-scope="Santosha.Button" variant="on-band" href="../cookbook/#gift">Buy a gift certificate</x-import>
+<x-import component-from-global-scope="Santosha.TextLink" tone="on-band" href="../cookbook/">Or give the cookbook</x-import>
+</div>
+</div>
+</div>
+</section>
+
+<section id="book" aria-labelledby="book-title" style="max-width: var(--layout-max); margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px 72px;">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px;">
+<p class="eyebrow" style="margin: 0; color: var(--forest);">Book a class</p>
+<h2 id="book-title" class="display" style="margin: 0;">Ready to cook?</h2>
+<p class="body" style="margin: 0; max-width: var(--text-max); color: var(--ink-muted);">Tell Liz which class you’d like, how many guests are coming and a few dates that work. She’ll be in touch to plan the menu with you.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
+<x-import component-from-global-scope="Santosha.Button" href="../contact/">Book a class</x-import>
+<x-import component-from-global-scope="Santosha.TextLink" href="../contact/#faq">Read the FAQ</x-import>
+</div>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; max-width: 480px;">
+<img src="../assets/img/liz-in-the-kitchen.jpg" alt="Liz at a marble kitchen counter with a board of fresh vegetables" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+</div>
+</section>
+
+<x-import component-from-global-scope="Santosha.SiteFooter" mark-src="../assets/img/santosha-mark-white.svg" tagline="Find your santosha…" location="Home Base — Vista, CA" columns="{{footerColumns}}" legal="© Santosha Nutrition. Plant-based nutrition education, not medical advice."></x-import>
+
+</div>
+</template>
+<script src="../assets/js/react.production.min.js"></script>
+<script src="../assets/js/react-dom.production.min.js"></script>
+<script src="../assets/js/santosha.js"></script>
+<script src="../assets/js/dc-runtime.js"></script>
+<script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      yes: true,
+      navLinks: [
+        { label: 'Cooking classes', href: '../cooking-classes/', current: true },
+        { label: 'Catering', href: '../catering/' },
+        { label: 'Events', href: '../events/' },
+        { label: 'Cookbook', href: '../cookbook/' },
+        { label: 'About Liz', href: '../about/' },
+        { label: 'Contact', href: '../contact/' }
+      ],
+      headerCta: { label: 'Book a class', shortLabel: 'Book', href: '../cooking-classes/' },
+      inPersonTags: [{ label: 'In person', tone: 'aubergine' }],
+      virtualTags: [{ label: 'Virtual', tone: 'aubergine' }],
+      footerColumns: [
+        { title: 'Work with Liz', links: [{ label: 'Cooking classes', href: '../cooking-classes/' }, { label: 'Catering & events', href: '../catering/' }, { label: 'Farm-to-table experiences', href: '../catering/#farm-to-table' }, { label: 'Menu consulting', href: '../catering/#consulting' }] },
+        { title: 'Shop', links: [{ label: 'Kitchen Contentment cookbook', href: '../cookbook/' }, { label: 'Class gift certificates', href: '../cookbook/#gift' }] },
+        { title: 'Connect', links: [{ label: 'Contact Chef Liz', href: '../contact/' }, { label: 'Newsletter sign up', href: '../index.html#newsletter' }, { label: 'Media & podcasts', href: '../about/#media' }, { label: 'Instagram', href: 'https://www.instagram.com/santoshanutrition' }] },
+        { title: 'Good to know', links: [{ label: 'FAQ', href: '../contact/#faq' }, { label: 'Testimonials', href: '../about/#testimonials' }, { label: 'Medical disclaimer', href: '../contact/#disclaimer' }] }
+      ]
+    };
+  }
+}
+mountDC(Component);
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Santosha — generated from tokens.json */
+:root, [data-theme="light"] {
+  --surface: #f6f7f3;
+  --surface-raised: #ffffff;
+  --surface-sunk: #eaede6;
+  --line: #d3d9d0;
+  --line-strong: #7b887f;
+  --ink: #15241c;
+  --ink-muted: #4f5d54;
+  --forest: #006341;
+  --forest-deep: #004a30;
+  --forest-soft: #e1eee6;
+  --on-forest: #ffffff;
+  --band-forest: #006341;
+  --band-aubergine: #614b79;
+  --on-band: #ffffff;
+  --aubergine: #614b79;
+  --aubergine-soft: #ece6f2;
+  --on-aubergine: #ffffff;
+  --citrus: #f1b30a;
+  --citrus-soft: #fdf0c8;
+  --on-citrus: #15241c;
+  --sprout: #57dd6d;
+  --on-sprout: #0b3d27;
+  --pomegranate: #971019;
+  --pomegranate-soft: #f9e2e3;
+  --scrim: #0a1610a6;
+  --wordmark-gray: #939598;
+  --link: var(--forest);
+  --shadow-sm: 0 1px 2px #15241c14, 0 2px 6px #15241c0f;
+  --shadow-lg: 0 6px 12px #15241c14, 0 16px 32px -4px #15241c29;
+  --focus-ring: 0 0 0 2px #f6f7f3, 0 0 0 4px #006341;
+  --focus-ring-on-band: 0 0 0 2px #006341, 0 0 0 4px #ffffff;
+}
+[data-theme="dark"] {
+  --surface: #0f1a14;
+  --surface-raised: #16241c;
+  --surface-sunk: #0a130e;
+  --line: #2c3d33;
+  --line-strong: #6f8276;
+  --ink: #edf2ec;
+  --ink-muted: #a7b5ab;
+  --forest: #8fd3aa;
+  --forest-deep: #b8e6c9;
+  --forest-soft: #173328;
+  --on-forest: #0f1a14;
+  --band-forest: #006341;
+  --band-aubergine: #614b79;
+  --on-band: #ffffff;
+  --aubergine: #c9b6de;
+  --aubergine-soft: #2a2236;
+  --on-aubergine: #0f1a14;
+  --citrus: #f1b30a;
+  --citrus-soft: #3a2d08;
+  --on-citrus: #15241c;
+  --sprout: #57dd6d;
+  --on-sprout: #0b3d27;
+  --pomegranate: #ff9aa0;
+  --pomegranate-soft: #3a1416;
+  --scrim: #0a1610b8;
+  --wordmark-gray: #939598;
+  --link: var(--forest);
+  --shadow-sm: 0 1px 3px #000000a6;
+  --shadow-lg: 0 16px 32px -4px #000000cc;
+  --focus-ring: 0 0 0 2px #0f1a14, 0 0 0 4px #8fd3aa;
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-pill: 9999px;
+  --layout-max: 1200px;
+  --text-max: 680px;
+  --header-height: 76px;
+  --font-display: Aleo, "Roboto Slab", Rockwell, Georgia, serif;
+  --font-text: "Sofia Sans Semi Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+}
+.display-xl { font-family: var(--font-display); font-size: 64px; line-height: 68px; font-weight: 300; letter-spacing: -0.01em; }
+.display { font-family: var(--font-display); font-size: 44px; line-height: 50px; font-weight: 300; letter-spacing: -0.005em; }
+.heading-1 { font-family: var(--font-display); font-size: 32px; line-height: 40px; font-weight: 400; }
+.heading-2 { font-family: var(--font-display); font-size: 24px; line-height: 32px; font-weight: 500; }
+.eyebrow { font-family: var(--font-display); font-size: 13px; line-height: 16px; font-weight: 400; letter-spacing: 0.2em; }
+.tagline { font-family: var(--font-display); font-size: 20px; line-height: 28px; font-weight: 300; font-style: italic; }
+.quote { font-family: var(--font-display); font-size: 28px; line-height: 38px; font-weight: 300; font-style: italic; }
+.heading-3 { font-family: var(--font-text); font-size: 20px; line-height: 26px; font-weight: 700; }
+.lead { font-family: var(--font-text); font-size: 21px; line-height: 32px; font-weight: 400; }
+.body { font-family: var(--font-text); font-size: 18px; line-height: 28px; font-weight: 400; }
+.body-sm { font-family: var(--font-text); font-size: 16px; line-height: 24px; font-weight: 400; }
+.label { font-family: var(--font-text); font-size: 16px; line-height: 20px; font-weight: 600; letter-spacing: 0.02em; }
+.price { font-family: var(--font-text); font-size: 20px; line-height: 24px; font-weight: 600; }
+.caption { font-family: var(--font-text); font-size: 14px; line-height: 20px; font-weight: 500; letter-spacing: 0.01em; }
+@font-face { font-family: "Aleo"; src: url("../fonts/Aleo-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Aleo"; src: url("../fonts/Aleo-Variable-Italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Sofia Sans Semi Condensed"; src: url("../fonts/SofiaSansSemiCondensed-Variable.woff2") format("woff2"); font-weight: 1 1000; font-style: normal; font-display: swap; }
+@font-face { font-family: "Sofia Sans Semi Condensed"; src: url("../fonts/SofiaSansSemiCondensed-Variable-Italic.woff2") format("woff2"); font-weight: 1 1000; font-style: italic; font-display: swap; }
